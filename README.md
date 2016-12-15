@@ -1,3 +1,3 @@
 # LOTTERY-CODES
-A solution for generating and checking lottery codes using PHP!
+LOTTERY-CODES is a solution for generating and verifing lottery codes using PHP! With it, you can generate and sent codes to users without saved them, and verify the codes just by logical calculation.
 ## Demand and Inspiration
