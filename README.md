@@ -9,11 +9,14 @@ which can improve the code's security.</p>
 ## Embryonic
 <p>Tried and tried again, I splite the bins to three parts: batch ID, codes number and encrypt message. With these message, I can generate codes by batches, each batch should generate several
 codes of specific quantity and each code has fixed numbers, and the remaining bins to save symmetric encrypted sign.</p>
-### Flow chart for generate:
+#### Flow chart for generate:
 ![Flow chart for generate](images/generate.jpg)
-### Flow chart for verify:
+#### Flow chart for verify:
 ![Flow chart for verify](images/verify.jpg)
 ## Problems and efforts
- - At first, I want to use **64 hex** whose dictionary contains [a-zA-Z0-9\-\_], But the codes as hard to read and input; 
- - Then **32 hex** was believed to be suitable which contains [A-Z0-9] without "0O1I" to avoid ambiguity as 32 charactors;
- - But the productors prefer to remove more charactors to avoid ambiguity, so **23 hex** was decided at last.
+ - At first, I want to use **base 64** whose dictionary contains [a-zA-Z0-9\-\_], But the codes as hard to read and input; 
+ - Then **base 32** was believed to be suitable which contains [A-Z0-9] without "0O1I" to avoid ambiguity as 32 charactors;
+ - But the productors prefer to remove more charactors to avoid ambiguity, so **base 23** was decided at last.
+#### achieve for base 23
+<p>Base 32 meant 5 binaries as one charactor, base 16 meant 4 binaries as ont charactor which use only 16 charactors but representative less binaries for one code, So I tried to think about some hex
+meant 4.5 binaries as one charactor.</p>
