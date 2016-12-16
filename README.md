@@ -9,4 +9,7 @@ which can improve the code's security.</p>
 ## Embryonic
 <p>Tried and tried again, I splite the bins to three parts: batch ID, codes number and encrypt message. With these message, I can generate codes by batches, each batch should generate several
 codes of specific quantity and each code has fixed numbers, and the remaining bins to save symmetric encrypted sign.</p>
+### Flow chart for generate:
 ![Flow chart for generate](images/generate.jpg)
+### Flow chart for verify:
+![Flow chart for verify](images/verify.jpg)
