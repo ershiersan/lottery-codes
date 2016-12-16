@@ -13,3 +13,9 @@ codes of specific quantity and each code has fixed numbers, and the remaining bi
 ![Flow chart for generate](images/generate.jpg)
 ### Flow chart for verify:
 ![Flow chart for verify](images/verify.jpg)
+## Problems and efforts
+<P>
+ - At first, I want to use **64 hex** whose dictionary contains [a-zA-Z0-9\-\_], But the codes as hard to read and input; 
+ - Then **32 hex** was believed to be suitable which contains [A-Z0-9] without "0O1I" to avoid ambiguity as 32 charactors;
+ - But the productors prefer to remove more charactors to avoid ambiguity, so **23 hex** was decided at last.
+</P>
