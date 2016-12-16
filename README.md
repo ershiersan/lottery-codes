@@ -20,3 +20,4 @@ codes of specific quantity and each code has fixed numbers, and the remaining bi
 #### achieve for base 23
 <p>Base 32 meant 5 binaries as one charactor, base 16 meant 4 binaries as ont charactor which use only 16 charactors but representative less binaries for one code, So I tried to think about some hex
 meant 4.5 binaries as one charactor.</p>
+<p>2^4.5≈22.6, so we can consider one charactor as base 23. And we can remove 9 charactors as '0O1I8B2Z5SDUV'.</p>
