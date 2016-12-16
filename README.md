@@ -17,6 +17,7 @@ codes of specific quantity and each code has fixed numbers, and the remaining bi
  - At first, I want to use **base 64** whose dictionary contains [a-zA-Z0-9\-\_], But the codes as hard to read and input; 
  - Then **base 32** was believed to be suitable which contains [A-Z0-9] without "0O1I" to avoid ambiguity as 32 charactors;
  - But the productors prefer to remove more charactors to avoid ambiguity, so **base 23** was decided at last.
+
 #### achieve for base 23
 <p>Base 32 meant 5 binaries as one charactor, base 16 meant 4 binaries as ont charactor which use only 16 charactors but representative less binaries for one code, So I tried to think about some hex
 meant 4.5 binaries as one charactor. 2^4.5≈22.6, so we can consider it as base 23. And we can remove the other 9 charactors as '8B2Z5SDUV'.</p>
